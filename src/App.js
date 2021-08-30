@@ -1,6 +1,6 @@
 // import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import React, { useState } from 'react'
 import Hello_fun_Cpmpo from './Component/Hello_fun_Cpmpo';
 import Hello_class_Cpmpo from './Component/Hello_class_Cpmpo';
@@ -9,10 +9,18 @@ import TodoForm from './Component/TodoForm ';
 import NumberList from './Component/NumberList';
 import Info from './Component/Info/Info';
 import Users from './Component/Info/Users ';
+import AllUsersInfo from './Component/Info/All-User-Info';
 
 import axios from 'axios';
 import Webserviceone from './Component/Webserviceone';
 import Webservicetwo from './Component/Webservicetwo';
+
+
+// import './';
+import './index.css';
+
+
+
 
 
 const number_data = [
@@ -28,6 +36,9 @@ const posts = [
 
 const data = ["pakistan", 1947, "taha"];
 
+
+
+
 function App() {
 
   const [country, year, name] = data;
@@ -37,21 +48,25 @@ function App() {
 
         <div className="App">
 
-          {data[1]}
-          <br />
+          {/* {data[1]} */}
+          {/* <br /> */}
           {/* <State setTodos={{ text: "hello" }} /> */}
           {/* <State setFruit /> */}
-          <br />
+          {/* <br /> */}
           {/* <State setTodos /> */}
-          <br />
+          {/* <br /> */}
           {/* <NumberList numbers={number_data} /> */}
-          <br />
-          <NumberList postss={posts} />
-          <br />
-          <hr />
+          {/* <br /> */}
+          {/* <NumberList postss={posts} /> */}
+          {/* <br /> */}
+          {/* <hr />   */}
+          {/* <AllUsersInfo /> */}
 
 
-          Hello React
+
+
+
+          {/* Hello React */}
 
 
           {/* <TodoForm saveTodo={console.warn} /> */}
@@ -66,17 +81,15 @@ function App() {
           {/* <Webservicetwo /> */}
 
           {/* <div style={{ margin: '40px' }} > */}
-          <h1 style={{ color: 'green' }}> Geeks For Geeks </h1>
+          {/* <h1 style={{ color: 'green' }}> Geeks For Geeks </h1>
+          <p> Mapping Data to component in React js. </p> */}
 
-
-          <p> Mapping Data to component in React js. </p>
-
-
-          {Users.map((e) => {
+          {/* {Users.map((e) => {
             return (
               <Info name={e.name} rollNo={e.rollNo} />
             );
-          })}
+          })} */}
+
           {/* <Info name={Users[0].name} rollNo={Users[0].rollNo} />
             <Info name={Users[1].name} rollNo={Users[1].rollNo} />
             <Info name={Users[2].name} rollNo={Users[2].rollNo} />
@@ -85,6 +98,9 @@ function App() {
             <Info name={Users[5].name} rollNo={Users[5].rollNo} />
             <Info name={Users[6].name} rollNo={Users[6].rollNo} /> */}
           {/* </div> */}
+
+
+
 
 
         </div>

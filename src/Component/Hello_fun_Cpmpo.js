@@ -64,9 +64,6 @@ export default function Hello(props) {
             <button onClick={() => sum_2(20, 30, 10)}>sum_2-function</button>
 
 
-
-
-
         </div >
 
 

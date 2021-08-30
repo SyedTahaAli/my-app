@@ -6,18 +6,10 @@ function Info(props) {
             border: '1px solid black',
             margin: '1px', width: '20%'
         }}>
-
-
             <p> {props.name} </p>
-
-
-
-
             <p> {props.rollNo}</p>
-
-
+            <hr />
         </div>
-
     )
 }
 export default Info;
