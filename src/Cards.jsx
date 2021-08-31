@@ -5,19 +5,34 @@ import Sdata from './Sdata';
 import './cards.css';
 
 
+function ncard(val) {
+    console.log(val);
+    return (
+        <MediaCard
+            imgsrc={val.imgsrc}
+            title={val.title}
+            link={val.link}
+            parag={val.parag}
+        />
+    );
+}
 
 export default function Cards() {
 
     return (
         <div>
-            <MediaCard
+            {Sdata.map(ncard)}
+
+
+
+            {/* <MediaCard
                 imgsrc={Sdata[0].imgsrc}
                 title={Sdata[0].title}
                 link={Sdata[0].link}
                 parag={Sdata[0].parag}
-            />
+            /> */}
             <br />
-            <MediaCard
+            {/* <MediaCard
                 imgsrc={Sdata[1].imgsrc}
                 title={Sdata[1].title}
                 link={Sdata[1].link}
@@ -29,7 +44,11 @@ export default function Cards() {
                 title={Sdata[2].title}
                 link={Sdata[2].link}
                 parag={Sdata[2].parag}
-            />
+            /> */}
+
+
+
+
 
 
 
